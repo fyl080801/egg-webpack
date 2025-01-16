@@ -1,0 +1,21 @@
+{
+  "extends": "../jsconfig.json",
+  "vueCompilerOptions": {
+    "target": 2.7
+  },
+  "compilerOptions": {
+    "baseUrl": "./",
+    "paths": {
+      "@/*": [
+        "./*"
+      ]
+    },
+    "jsx": "preserve",
+    "lib": [
+      "ESNext",
+      "DOM"
+    ],
+    "module": "ESNext",
+    "moduleResolution": "bundler"
+  }
+}

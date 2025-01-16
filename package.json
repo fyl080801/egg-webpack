@@ -1,0 +1,54 @@
+{
+  "name": "webpack1",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "egg": {
+    "declarations": false
+  },
+  "dependencies": {
+    "egg": "^3.30.0",
+    "egg-scripts": "^3.1.0",
+    "egg-view-nunjucks": "^2.3.0"
+  },
+  "devDependencies": {
+    "babel-loader": "^9.2.1",
+    "css-loader": "^7.1.2",
+    "egg-bin": "^6.13.0",
+    "eslint": "^8.57.1",
+    "eslint-config-egg": "^13.1.0",
+    "html-webpack-plugin": "^5.6.3",
+    "koa-compose": "^4.1.0",
+    "koa-connect": "^2.1.0",
+    "mini-css-extract-plugin": "^2.9.2",
+    "postcss-loader": "^8.1.1",
+    "prettier": "^3.4.2",
+    "sass": "^1.83.4",
+    "sass-loader": "^16.0.4",
+    "style-loader": "^4.0.0",
+    "vue": "^2.7.16",
+    "vue-loader": "^15.11.1",
+    "webpack": "^5.97.1",
+    "webpack-cli": "^6.0.1",
+    "webpack-dev-middleware": "^7.4.2",
+    "webpack-hot-middleware": "^2.26.1",
+    "webpack-merge": "^6.0.1"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "start": "egg-scripts start --daemon --title=egg-server-webpack1",
+    "stop": "egg-scripts stop --title=egg-server-webpack1",
+    "dev": "egg-bin dev",
+    "build": "webpack build ./build/webpack.prod.js",
+    "lint": "eslint .",
+    "ci": "npm run lint && npm run cov"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "",
+  "license": "MIT"
+}
