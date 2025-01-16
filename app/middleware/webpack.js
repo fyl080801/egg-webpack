@@ -2,14 +2,17 @@ const compose = require('koa-compose');
 const koaConnect = require('koa-connect');
 const { webpack } = require('webpack');
 const { koaWrapper } = require('webpack-dev-middleware');
-const hot = require('webpack-hot-middleware');
+const hotWrapper = require('webpack-hot-middleware');
 
 module.exports = config => {
-  const compiler = webpack(config.options);
+  const { options, hot } = config || {};
+
+  const compiler = webpack(options);
 
   const middlewares = [
     koaWrapper(compiler),
-    config.hot && koaConnect(hot(compiler)),
+    hot &&
+      koaConnect(hotWrapper(compiler, typeof hot === 'boolean' ? {} : hot)),
   ].filter(item => item);
 
   return compose(middlewares);

@@ -38,10 +38,11 @@
     "node": ">=18.0.0"
   },
   "scripts": {
-    "start": "egg-scripts start --daemon --title=egg-server-webpack1",
+    "start": "egg-scripts start",
+    "start:daemon": "egg-scripts start --daemon --title=egg-server-webpack1",
     "stop": "egg-scripts stop --title=egg-server-webpack1",
     "dev": "egg-bin dev",
-    "build": "webpack build ./build/webpack.prod.js",
+    "build": "webpack -c ./build/webpack.prod.js",
     "lint": "eslint .",
     "ci": "npm run lint && npm run cov"
   },
