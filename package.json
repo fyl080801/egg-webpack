@@ -43,8 +43,7 @@
     "stop": "egg-scripts stop --title=egg-server-webpack",
     "dev": "egg-bin dev",
     "build": "webpack -c ./build/webpack.prod.js",
-    "lint": "eslint .",
-    "ci": "npm run lint && npm run cov"
+    "lint": "eslint ."
   },
   "repository": {
     "type": "git",
