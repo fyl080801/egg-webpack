@@ -1,6 +1,6 @@
-# webpack1
+# egg-webpack
 
-
+eggjs 集成 webpack
 
 ## QuickStart
 

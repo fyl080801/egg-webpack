@@ -1,5 +1,5 @@
 {
-  "name": "webpack1",
+  "name": "egg-webpack",
   "version": "1.0.0",
   "description": "",
   "private": true,
@@ -39,8 +39,8 @@
   },
   "scripts": {
     "start": "egg-scripts start",
-    "start:daemon": "egg-scripts start --daemon --title=egg-server-webpack1",
-    "stop": "egg-scripts stop --title=egg-server-webpack1",
+    "start:daemon": "egg-scripts start --daemon --title=egg-server-webpack",
+    "stop": "egg-scripts stop --title=egg-server-webpack",
     "dev": "egg-bin dev",
     "build": "webpack -c ./build/webpack.prod.js",
     "lint": "eslint .",
