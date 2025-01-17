@@ -24,6 +24,16 @@ module.exports = appInfo => {
     },
   };
 
+  config.router = {
+    routes: [
+      {
+        path: '/',
+        view: 'index.html',
+        meta: {},
+      },
+    ],
+  };
+
   // add your user config here
   const userConfig = {};
 
