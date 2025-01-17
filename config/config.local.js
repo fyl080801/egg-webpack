@@ -5,11 +5,11 @@ const webpack = require('../build/webpack.dev');
 module.exports = appInfo => {
   const config = {};
 
-  config.middleware = ['webpack'];
-
   // config.view = {
   //   root: path.join(appInfo.baseDir, 'public'),
   // };
+  
+  config.middleware = ['webpack'];
 
   config.webpack = {
     options: {

@@ -6,6 +6,10 @@
   "egg": {
     "declarations": false
   },
+  "eggScriptsConfig": {
+    "title": "egg-server-webpack",
+    "workers": 2
+  },
   "dependencies": {
     "egg": "^3.30.0",
     "egg-scripts": "^3.1.0",
@@ -39,8 +43,8 @@
   },
   "scripts": {
     "start": "egg-scripts start",
-    "start:daemon": "egg-scripts start --daemon --title=egg-server-webpack",
-    "stop": "egg-scripts stop --title=egg-server-webpack",
+    "start:daemon": "egg-scripts start --daemon",
+    "stop": "egg-scripts stop",
     "dev": "egg-bin dev",
     "build": "webpack -c ./build/webpack.prod.js",
     "lint": "eslint ."
